@@ -8,7 +8,7 @@ const Hero = () => {
     const imageRef = useRef()
     useEffect(()=>{
 gsap.to(imageRef.current,{
-  x:"-40%",
+  x:"-90%",
     opacity:1,
     duration:1,
     ease:"power3.out"
@@ -23,7 +23,7 @@ gsap.to(imageRef.current,{
 
 })
 gsap.to(imageRef.current,{
-  x:300,
+  x:"90%",
     opacity:1,
     delay:1.75,
     duration:0.5,
@@ -43,7 +43,7 @@ gsap.to(imageRef.current,{
     <div id='Home' className='h-full w-full'>
    <div className='w-full'>
      <div className='z-50 hidden md:flex md:fixed w-full  items-center justify-between pl-5 pr-5 backdrop-blur-sm '>
-        <a href='#'>Logo</a>
+       <img className='rounded-full w-[4vw] h-[8vh]' src='/makhanalogo.jpg'></img>
         <div className='flex gap-2 items-center '>
             <a href='#Home'>Home</a>
             <a href='#Type'>Types</a>
@@ -54,7 +54,7 @@ gsap.to(imageRef.current,{
   
        <div className="flex md:hidden justify-between items-center px-5 py-4 ">
 
-        <a>Logo</a>
+        <img className='rounded-full w-[7vw] h-[8vh]' src='/makhanalogo.jpg'></img>
 
       
         <button onClick={() => setMenuOpen(!menuOpen)}>
@@ -69,22 +69,18 @@ gsap.to(imageRef.current,{
             setMenuOpen((prev)=>{
                 return !prev;
             })
-          }} href='#home'>Home</a>
+          }} href='#Home'>Home</a>
           <a onClick={()=>{
             setMenuOpen((prev)=>{
                 return !prev;
             })
-          }} href='#type'>Types</a>
+          }} href='#Type'>Types</a>
           <a onClick={()=>{
             setMenuOpen((prev)=>{
                 return !prev;
             })
           }} href='#Feedback'>Feedback</a>
-          <a onClick={()=>{
-            setMenuOpen((prev)=>{
-                return !prev;
-            })
-          }} href='#Contact'>Contact</a>
+          <div><video autoPlay loop muted className='h-[10vw] w-[10vw] object-center rounded-full' src="/headeing video.mp4"/></div>
 
         </div>
       )}

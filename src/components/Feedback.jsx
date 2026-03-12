@@ -11,15 +11,16 @@ export default function Feedback() {
 
     }
     return (
-      <div id="Feedback" className="bg-gradient-to-r from-yellow-400 to-yellow-700 flex-col gap-1">
-      <div className="w-full h-[7vh]">
+      <div id="Feedback" className="bg-gradient-to-r from-yellow-400 to-yellow-700 flex-col gap-1 min-h-screen w-screen">
+      {/* <div className="w-full h-[7vh]">
 
-      </div>
+      </div> */}
 
-          <form className="flex flex-col items-center text-sm  w-screen h-screen">
+          <form className="flex flex-col items-center text-sm  w-full h-full">
             <p className="text-lg text-red-900 font-medium pb-2">Feedback</p>
             <h1 className="text-4xl font-semibold text-slate-700 pb-4">Get in touch with us</h1>
-            <p className="text-sm text-gray-500 text-center pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />Lorem Ipsum has been the industry's standard dummy text.</p>
+            <p className="text-sm text-gray-500 text-center pb-10">Your feedback helps us improve. Share your thoughts and experience with our makhana so we can continue delivering better taste and quality.
+</p>
             
             <div className="flex flex-col md:flex-row items-center gap-8 w-[350px] md:w-[700px]">
                 <div className="w-full">
@@ -37,7 +38,7 @@ export default function Feedback() {
                 <textarea name="message" value={data.message} onChange={change} className="w-full mt-2 p-2 h-40 border border-gray-500/30 rounded resize-none outline-none focus:border-indigo-300" required></textarea>
             </div>
         
-            <button type="button" className="mt-5 bg-yellow-700 text-white h-12 w-56 px-4 rounded active:scale-95 transition">{send?"plss wait..":"Send Message"}</button>
+            <button type="button" className="mt-6 bg-yellow-700 text-white h-12 w-56 px-4 rounded active:scale-95 transition">{send?"plss wait..":"Send Message"}</button>
         </form>
       </div>
     );
