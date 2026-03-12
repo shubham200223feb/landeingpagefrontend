@@ -15,7 +15,7 @@ const Types = () => {
   return (
     <div id="Type" className="w-screen b py-10 bg-gradient-to-r from-yellow-400 to-yellow-700">
       <h1 className="text-white text-[10vw] font-bold text-center mb-6">
-        Comeing Soon .... 
+        Coming Soon .... 
       </h1>
 
       <Marquee speed={60} pauseOnHover={true} gradient={false}>
