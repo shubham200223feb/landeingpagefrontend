@@ -4,7 +4,7 @@ import Types from './components/Types'
 import Feedback from './components/Feedback'
 import Footer from './components/Footer'
 import { Route, Router } from 'react-router-dom'
-import Userpage from './pages/userpage'
+import Userpage from './pages/Userpage.jsx'
 
 const App = () => {
   return (
