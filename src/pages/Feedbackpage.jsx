@@ -37,7 +37,10 @@ export default function FeedbackList() {
   return (
 
     <div className="bg-black min-h-screen w-screen text-white p-10">
-
+<div className="w-full flex items-center justify-between  ">
+    <a href="/">Home </a>
+    <img className="w-[10vw] h-[8vh]'" src="/makhanalogo.jpg"></img>
+</div>
       <h1 className="text-4xl font-bold text-center mb-10">
         All Feedback
       </h1>
