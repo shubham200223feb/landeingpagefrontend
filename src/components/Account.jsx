@@ -26,7 +26,7 @@ export default function Account() {
                 }
             `}</style>
             
-            <div className="flex flex-col justify-center w-screen h-screen items-center  max-w-80 rounded-xl px-6 py-8 border border-slate-700 bg-slate-900 text-white text-sm">
+            <div className="flex flex-col justify-center w-screen h-screen items-center   rounded-xl px-6 py-8 border border-slate-700 bg-slate-900 text-white text-sm">
                 <h2 className="text-2xl font-semibold">Sign In</h2>
                 <p className="text-slate-300 mt-1">Login to your account</p>
                 <form onSubmit={Submit} className="mt-8" onsubmit="return false">
