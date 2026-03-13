@@ -3,14 +3,15 @@ import Hero from './components/Hero'
 import Types from './components/Types'
 import Feedback from './components/Feedback'
 import Footer from './components/Footer'
+import { Route, Router } from 'react-router-dom'
+import Userpage from './pages/userpage'
 
 const App = () => {
   return (
-    <div className='bg-gradient-to-r from-yellow-400 to-yellow-700 w-screen h-screen mb'>
-      <Hero/>
-      <Types/>
-      <Feedback/>
-      <Footer/>
+    <div >
+<Router>
+  <Route path='/' element={Userpage}></Route>
+  </Router>      
     </div>
   )
 }

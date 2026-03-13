@@ -40,7 +40,7 @@ gsap.to(imageRef.current,{
 })
     },[])
   return (
-    <div id='Home' className='h-full w-full'>
+    <div id='Home' className='min-h-screen w-screen bg-gradient-to-r from-yellow-400 to-yellow-700  '>
    <div className='w-full'>
      <div className='z-50 hidden md:flex md:fixed w-full  items-center justify-between pl-5 pr-5 backdrop-blur-sm '>
        <img className='rounded-full w-[4vw] h-[8vh]' src='/makhanalogo.jpg'></img>
