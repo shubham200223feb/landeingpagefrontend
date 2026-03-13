@@ -1,16 +1,16 @@
 import React from 'react'
 import { Route, Router } from 'react-router-dom'
-import Userpage from "./pages/Userpage"
+import Userpage from "./pages/Userpage.jsx"
 
 
 
 const App = () => {
   return (
-   <div>
+  
     <Router>
       <Route path='/' element={Userpage}></Route>
     </Router>
-   </div>
+ 
   )
 }
 
