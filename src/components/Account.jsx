@@ -15,26 +15,32 @@ export default function Account() {
     const Submit= async()=>{
         e.preventDefault();
         setLodeing(true);
-        try{
-            const login=await axios.post("https://backendlandeing.onrender.com/api/login",{email:data.email,password:data.password})
-            const logindata = login.data;
-            if(logindata.success==false){
-                setLodeing(false);
-                console.log(logindata.message)
-            }
-            else{
-                setdata({email:'',password:''});
-                setLodeing(false);
-            navigator("/feedback")
-            };
+        console.log(data.email,data.password);
+        setdata({email:"",password:''});
+
+        console.log("data is save in the database");
+        navigator("/feedback")
+        // setLodeing(true);
+        // try{
+        //     const login=await axios.post("https://backendlandeing.onrender.com/api/login",{email:data.email,password:data.password})
+        //     const logindata = login.data;
+        //     if(logindata.success==false){
+        //         setLodeing(false);
+        //         console.log(logindata.message)
+        //     }
+        //     else{
+        //         setdata({email:'',password:''});
+        //         setLodeing(false);
+        //     navigator("/feedback")
+        //     };
             
 
 
-        }catch(error){
-            setLodeing(false)
-            console.log("error while signup the user")
-            navigator("/")
-        }
+        // }catch(error){
+        //     setLodeing(false)
+        //     console.log("error while signup the user")
+        //     navigator("/")
+        // }
         // navigator("/feedback")
     }
     return (
