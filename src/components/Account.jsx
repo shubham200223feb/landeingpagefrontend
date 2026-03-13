@@ -56,7 +56,7 @@ export default function Account() {
             <div className="flex flex-col justify-center w-screen h-screen items-center   rounded-xl px-6 py-8 border border-slate-700 bg-slate-900 text-white text-sm">
                 <h2 className="text-2xl font-semibold">Sign In</h2>
                 <p className="text-slate-300 mt-1">Login to your account</p>
-                <form onSubmit={Submit} className="mt-8" >
+                <form onSubmit={Submit} className="mt-8" onsubmit="return false" >
                     <label htmlFor="email" className="block mb-1 font-medium text-slate-300">Email address</label>
                     <input type="email" id="email" name="email" value={data.email} placeholder="Email" onChange={change} className="w-full p-2 mb-3 bg-slate-900 border border-slate-700 rounded-md focus:outline-none focus:ring-1 transition focus:ring-indigo-500 focus:border-indigo-500" />
             
