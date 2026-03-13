@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Account() {
+    const navigator = useNavigate();
     const[Loadeing,setLodeing]= useState(false);
     const [data ,setdata]=useState({email:'',password:""})
     const change= (e)=>{
@@ -9,12 +11,13 @@ export default function Account() {
             return ({...prev,[name]:value})
         })
     }
-    const Submit= async()=>{
-        try{
+    const Submit= ()=>{
+        // try{
 
-        }catch(error){
+        // }catch(error){
 
-        }
+        // }
+        navigator("/feedback")
     }
     return (
         <>
