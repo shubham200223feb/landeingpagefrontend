@@ -7,7 +7,7 @@ export default function Feedback() {
     const change= (e)=>{
         const{name,value}=e.target;
         setdata((...prev)=>{
-            return{...prev,[name]:[value]}
+            return{...prev,[name]:value}
         })
 
     }
@@ -60,7 +60,7 @@ export default function Feedback() {
                 <textarea name="message" value={data.message} onChange={change} required className="w-full mt-2 p-2 h-40 border border-gray-500/30 rounded resize-none outline-none focus:border-indigo-300" required></textarea>
             </div>
         
-            <button type="Submit" className="mt-6 bg-yellow-700 text-white h-12 w-56 px-4 rounded active:scale-95 transition">{send?"plss wait..":"Send Message"}</button>
+            <button type="submit" className="mt-6 bg-yellow-700 text-white h-12 w-56 px-4 rounded active:scale-95 transition">{send?"plss wait..":"Send Message"}</button>
         </form>
       </div>
     );
