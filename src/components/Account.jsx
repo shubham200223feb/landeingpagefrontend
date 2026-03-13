@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -11,13 +12,28 @@ export default function Account() {
             return ({...prev,[name]:value})
         })
     }
-    const Submit= ()=>{
-        // try{
+    const Submit= async()=>{
+        e.preventDefault();
+        try{
+            setLodeing(true);
+            const login=await axios.post("https://backendlandeing.onrender.com/api/login",data)
+            const logindata = login.data;
+            if(logindata.success==false){
+                setLodeing(false);
+                console.log(logindata.message)
+            }
+            else{
+                setdata({email:'',password:''});
+                setLodeing(false);
+                navigator("/feedback");
+            };
+            
 
-        // }catch(error){
 
-        // }
-        navigator("/feedback")
+        }catch(error){
+            console.log("error while signup the user")
+        }
+        // navigator("/feedback")
     }
     return (
         <>
@@ -32,7 +48,7 @@ export default function Account() {
             <div className="flex flex-col justify-center w-screen h-screen items-center   rounded-xl px-6 py-8 border border-slate-700 bg-slate-900 text-white text-sm">
                 <h2 className="text-2xl font-semibold">Sign In</h2>
                 <p className="text-slate-300 mt-1">Login to your account</p>
-                <form onSubmit={Submit} className="mt-8" onsubmit="return false">
+                <form onSubmit={Submit} className="mt-8" >
                     <label htmlFor="email" className="block mb-1 font-medium text-slate-300">Email address</label>
                     <input type="email" id="email" name="email" value={data.email} placeholder="Email" onChange={change} className="w-full p-2 mb-3 bg-slate-900 border border-slate-700 rounded-md focus:outline-none focus:ring-1 transition focus:ring-indigo-500 focus:border-indigo-500" />
             
