@@ -34,9 +34,9 @@ export default function Feedback() {
      }
     return (
       <div id="Feedback" className="bg-gradient-to-r from-yellow-400 to-yellow-700 flex-col gap-1 min-h-screen w-screen">
-      {/* <div className="w-full h-[7vh]">
+      <div className="w-full h-[7vh]">
 
-      </div> */}
+      </div>
 
           <form onSubmit={onsubmit} className="flex flex-col items-center text-sm  w-full h-full">
             <p className="text-lg text-red-900 font-medium pb-2">Feedback</p>
