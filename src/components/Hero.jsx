@@ -54,7 +54,7 @@ gsap.to(imageRef.current,{
   
        <div className="flex md:hidden justify-between items-center px-5 py-4 ">
 
-        <img className='rounded-full w-[7vw] h-[8vh]' src='/makhanalogo.jpg'></img>
+        <img className='rounded-full w-[8vh] h-[8vh]' src='/makhanalogo.jpg'></img>
 
       
         <button onClick={() => setMenuOpen(!menuOpen)}>
@@ -94,7 +94,7 @@ gsap.to(imageRef.current,{
       }} whileTap={{ 
         rotate:360, 
         transition: { duration: 1 } 
-      }}  className=' z-10 w-[50vw] md:w-[30vw] h-[80vh] cursor-pointer' src='/front.png'></motion.img>
+      }}  className=' z-10 w-[70vw] md:w-[30vw] h-[80vh] cursor-pointer' src='/front.png'></motion.img>
     </div>
       
     </div>
