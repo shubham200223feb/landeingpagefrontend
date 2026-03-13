@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Account() {
+    const navigator= useNavigate();
 
   const [send, setsend] = useState(false);
 
@@ -48,7 +50,7 @@ export default function Account() {
          password:""
         });
 
-       
+       navigator("/feedback")
 
       }
 
