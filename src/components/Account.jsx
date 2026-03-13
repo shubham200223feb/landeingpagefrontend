@@ -107,7 +107,7 @@ export default function Account() {
               value={data.password}
               onChange={change}
               className="h-12 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-indigo-300"
-              type="email"
+              type="text"
               required
             />
           </div>
