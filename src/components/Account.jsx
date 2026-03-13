@@ -70,17 +70,17 @@ export default function Account() {
 
     <div
       id="Feedback"
-      className="bg-gradient-to-r from-yellow-400 to-yellow-700 min-h-screen w-screen flex flex-col items-center"
+      className="bg-gradient-to-r from-black-400 to-black-900 min-h-screen w-screen flex flex-col items-center"
     >
 
       <form
         onSubmit={onsubmit}
-        className="flex flex-col items-center text-sm w-full max-w-3xl p-6"
+        className="flex flex-col items-center justify-center text-sm w-full max-w-3xl p-6"
       >
 
        
 
-        <h1 className="text-4xl font-semibold text-slate-700 pb-4 text-center">
+        <h1 className="text-4xl font-semibold text-white pb-4 text-center">
           Sign In
         </h1>
 
